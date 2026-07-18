@@ -2,10 +2,12 @@
 @section('title', 'Inicio')
 @section('content')
 <section class="bienvenida">
-    <h2>Bienvenido a TechStore</h2>
+    <h2>{{ $empresa }}</h2>
+    <h3>{{ $eslogan }}</h3>
+    <p>{{ $mensaje }}</p>
     <p>
-        Bienvenido a <strong>TechStore</strong>, su tienda especializada en soluciones
-        tecnológicas.
+        Bienvenido a <strong>{{ $empresa }}</strong>, su tienda especializada en
+        soluciones tecnológicas.
         Nos dedicamos a la comercialización de equipos informáticos, dispositivos
         electrónicos,
         accesorios y servicios tecnológicos orientados a satisfacer las necesidades de
@@ -13,8 +15,8 @@
         profesionales, empresas y público en general.
     </p>
     <p>
-        En TechStore creemos que la tecnología constituye una herramienta fundamental
-        para el
+        En {{ $empresa }} creemos que la tecnología constituye una herramienta
+        fundamental para el
         aprendizaje, el trabajo y la innovación; por ello ofrecemos productos de
         calidad,
         asesoría especializada y un servicio personalizado para cada uno de nuestros

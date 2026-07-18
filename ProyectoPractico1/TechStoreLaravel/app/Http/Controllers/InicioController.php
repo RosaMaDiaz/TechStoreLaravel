@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class InicioController extends Controller
 {
+    /* Muestra la página principal de TechStoreLaravel. */
     public function index()
     {
-        return view('inicio'); // Asegúrate de que este nombre coincida con tu archivo inicio.blade.php
+        $empresa = "TechStore";
+        $eslogan = "Tecnología para todos";
+        $mensaje = "Bienvenido a nuestro catálogo de productos tecnológicos.";
+        return view(
+            'inicio',
+            compact(
+                'empresa',
+                'eslogan',
+                'mensaje'
+            )
+        );
     }
 }
