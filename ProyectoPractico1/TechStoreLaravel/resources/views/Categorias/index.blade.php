@@ -5,8 +5,7 @@
                 Gestión de Categorías
             </h2>
             <a href="{{ route('categorias.create') }}"
-                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded
-shadow">
+                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow">
                 Nueva Categoría
             </a>
         </div>
@@ -14,8 +13,7 @@ shadow">
     <div class="py-8">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             @if(session('success'))
-            <div class="bg-green-100 border border-green-300 text-green-700 px-4
-py-3 rounded mb-6">
+            <div class="bg-green-100 border border-green-300 text-green-700 px-4 py-3 rounded mb-6">
 
                 {{ session('success') }}
             </div>
@@ -44,22 +42,22 @@ py-3 rounded mb-6">
                             </td>
                             <td class="px-6 py-4 text-center space-x-2">
                                 <a href="{{ route('categorias.edit',$categoria) }}"
-                                    class="bg-yellow-500 hover:bg-yellow-600 text-
-white px-3 py-1 rounded">
+                                    class="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded">
                                     Editar
                                 </a>
-                                <form action="{{
-route('categorias.destroy',$categoria) }}"
+                                <form action="{{route('categorias.destroy',$categoria) }}"
                                     method="POST"
                                     class="inline">
+
                                     @csrf
                                     @method('DELETE')
+
                                     <button
                                         onclick="return confirm('¿Desea eliminar esta categoría?')"
-                                        class="bg-red-600 hover:bg-red-700 text-
-white px-3 py-1 rounded">
+                                        class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded">
                                         Eliminar
                                     </button>
+
                                 </form>
                             </td>
                         </tr>
