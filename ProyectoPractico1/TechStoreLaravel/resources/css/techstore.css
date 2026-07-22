@@ -1,0 +1,101 @@
+/*======================================================
+TECHSTORE LARAVEL
+Estilos personalizados del proyecto
+Framework base: Laravel Breeze + Tailwind CSS
+Importante:
+Este archivo contiene únicamente estilos específicos
+del proyecto TechStoreLaravel. La apariencia general
+de la aplicación es administrada por Tailwind CSS.
+======================================================*/
+
+/* IDENTIDAD VISUAL */
+
+.ts-primary{
+color:#0d6efd;
+}
+.ts-secondary{
+color:#084298;
+}
+.ts-success{
+color:#198754;
+}
+
+/* BANNER PRINCIPAL */
+.ts-banner{
+max-width:1200px;
+margin:0 auto 2rem auto;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+.ts-banner img{
+width:100%;
+height:260px;
+object-fit:cover;
+object-position:center;
+display:block;
+}
+
+/* TARJETAS INFORMATIVAS */
+.ts-card{
+transition:all .30s ease;
+}
+.ts-card:hover{
+transform:translateY(-6px);
+}
+
+/* TARJETAS DE PRODUCTOS */
+
+.ts-producto img{
+width:180px;
+height:180px;
+object-fit:cover;
+}
+.ts-precio{
+color:#198754;
+font-weight:bold;
+font-size:1.15rem;
+}
+
+/* BOTONES PERSONALIZADOS */
+.ts-btn-primary{
+transition:.25s;
+}
+.ts-btn-primary:hover{
+transform:translateY(-2px);
+}
+
+/* DASHBOARD */
+.ts-dashboard-card{
+transition:.30s;
+}
+.ts-dashboard-card:hover{
+transform:scale(1.02);
+}
+
+/* TABLAS CRUD */
+.ts-table img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:8px;
+
+}
+
+/* FORMULARIOS */
+.ts-preview{
+width:180px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+#banner img{
+height:180px;
+}
+.ts-producto img{
+width:140px;
+height:140px;
+}
+}
