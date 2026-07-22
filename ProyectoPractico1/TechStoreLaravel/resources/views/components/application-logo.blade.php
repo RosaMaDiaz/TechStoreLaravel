@@ -2,5 +2,5 @@
     <img
         src="{{ asset('images/logo/logo-techstore.png') }}"
         alt="TechStoreLaravel"
-        class="h-full w-auto object-contain">
+        class="h-16 w-auto object-contain">
 </div>

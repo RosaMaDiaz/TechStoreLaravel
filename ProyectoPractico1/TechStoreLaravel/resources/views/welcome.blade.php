@@ -25,20 +25,17 @@
                 @if (Route::has('login'))
                 @auth
                 <a href="{{ route('dashboard') }}"
-                    class="bg-white text-blue-700 px-4 py-2 rounded-md font-
-semibold">
+                    class="bg-white text-blue-700 px-4 py-2 rounded-md font-semibold">
                     Ir al Panel
                 </a>
                 @else
                 <a href="{{ route('login') }}"
-                    class="border border-white px-4 py-2 rounded-md hover:bg-
-white hover:text-blue-700">
+                    class="border border-white px-4 py-2 rounded-md hover:bg-white hover:text-blue-700">
                     Iniciar sesión
                 </a>
                 @if(Route::has('register'))
                 <a href="{{ route('register') }}"
-                    class="bg-yellow-400 text-black px-4 py-2 rounded-md
-font-semibold">
+                    class="bg-yellow-400 text-black px-4 py-2 rounded-md font-semibold">
                     Registrarse
                 </a>
                 @endif
